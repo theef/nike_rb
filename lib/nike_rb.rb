@@ -29,7 +29,7 @@ module NikeRb
 			response = HTTParty.get("#{params}", headers: HEADERS)
 			body = JSON.parse response.body
 
-			puts body
+			return body
 		end
 	end
 
