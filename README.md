@@ -1,6 +1,6 @@
 # NikeRb
 
-TODO: Write a gem description
+NikeRb is a ruby wrapper for the Nike Developers API.  Originally created for use with the Nike Fuelband API.  Support for other devices may be added at a later date.
 
 ## Installation
 
