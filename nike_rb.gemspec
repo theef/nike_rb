@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = NikeRb::VERSION
   spec.authors       = ["Kevin Wanek"]
   spec.email         = ["k@dmcy.us"]
-  spec.description   = %q{NikeRb is a ruby wrapper for the Nike Developers API.  Originally created for use with the Nike Fuelband API.  Support for other devices may be added at a later date.}
+  spec.summary       = %q{NikeRb is a ruby wrapper for the Nike Developers API.  Originally created for use with the Nike Fuelband API.  Support for other devices may be added at a later date.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -21,4 +21,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
 
   spec.add_dependency "httparty"
+  spec.add_dependency "json"
 end
