@@ -26,11 +26,21 @@ module NikeRb
 	  		params << "&count=#{options[:count]}"
 	  	end
 
-			response = HTTParty.get("#{params}", headers: HEADERS)
+			response = HTTParty.get(params, headers: HEADERS)
 			body = JSON.parse response.body
 
 			return body
 		end
+
+		def activity_detail(id)
+			params = "#{API_URI}/me/sport/activities/#{id}?access_token=#{@access_token}"
+
+			response = HTTParty.get(params)
+			body = JSON.parse response.body
+
+			return body
+		end
+
 	end
 
 end
