@@ -20,7 +20,17 @@ module NikeRb
 			@access_token = access_token
 		end
 
-		def current_fuel(options={})
+		
+
+	end
+
+	class Api
+
+		def initialize(access_token)
+			@access_token = access_token
+		end
+
+		def activities(options={})
 	  	params = "#{API_URI}/me/sport/activities?access_token=#{@access_token}"
 	  	if options[:count]
 	  		params << "&count=#{options[:count]}"
